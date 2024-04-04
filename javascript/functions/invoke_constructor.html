@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+<p>In this example, myFunction is a function constructor:</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(arg1, arg2) {
+  this.firstName = arg1;
+  this.lastName  = arg2;
+}
+
+const myObj = new myFunction("John","Doe")
+document.getElementById("demo").innerHTML = myObj.firstName; 
+</script>
+
+</body>
+</html>
+
+
