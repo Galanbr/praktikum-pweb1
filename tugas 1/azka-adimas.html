@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2</title>
+</head>
+<style>
+    h1 {
+        color: rgb(87, 87, 218);
+        text-align: center;
+    }
+
+    table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+        
+    
+    }
+    th,td {
+        text-align: left;
+        border: 1px solid red;
+        
+    }
+
+    th{
+        background-color: rgb(87, 87, 218);
+        color: white;
+    }
+
+    tr:nth-child(even){
+        background-color: #59ddd5;
+    }
+
+    head tr:hover, body tr:hover{
+            font-weight: bold;
+            font-size: 120%;
+            background-color: greenyellow;
+            transition: font-size 1s ease;
+    }
+
+</style>
+
+<body>
+    <h1>Daftar Mahasiswa</h1>
+<table>
+    <tr>
+        <th>Nama</th>
+        <th>Program Studi</th>
+        <th> Kelas</th>
+    </tr>
+    <tr>
+        <td>John Doe</td>
+        <td>Teknik Informatika</td>
+        <td>A-01</td>
+    </tr>
+    <tr>
+        <td>Jane Smith</td>
+        <td>Sistem Informasi</td>
+        <td>B-02</td>
+    </tr>
+    <tr>
+        <td>Alice Johnson</td>
+        <td>Teknik Komputer</td>
+        <td>A-03</td>
+    </tr>
+    <tr>
+        <td>Bob Brown</td>
+        <td>Teknik Elektro</td>
+        <td>C-01</td>
+    </tr>
+    <tr>
+        <td>Emily Davis</td>
+        <td>Manajemen Informatika</td>
+        <td>D-02</td>
+    </tr>
+</table>
+<h4>Keterangan:</h4>
+        <ol>
+            <li>Warna Heading dan Table Header adalah <b>rgb(87, 87, 218)</b></li>
+            <li>Warna Baris Genap adalah <b>#59ddd5</b></li>
+            <li>Warna saat hover adalah <b>greenyellow</b></li>
+            <li>Pada saat hover, ukuran font <b>lebih besar 120%</b>, dan berubah menjadi <b>BOLD</b></li>
+        </ol>
+</body>
+</html>

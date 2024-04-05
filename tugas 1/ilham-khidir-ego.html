@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge JS</title>
+</head>
+
+<style>
+    .content {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    table {
+        border: 1px solid gray;
+        border-collapse: collapse;
+        width: 20%;
+    }
+    th ,td{
+        border: 1px solid gray;
+    }
+    th {
+        background-color: lightgray;
+    }
+    tr:nth-child(even) {
+        background-color: lightgray;
+    }
+    tr:hover {
+        background-color: gray;
+    }
+    button {
+        margin-top: 3%;
+    }
+    img {
+        width: 200px;
+        height: 150px;
+    }
+    
+        </style>
+<body>
+    <div class="content">
+    <h1> JavaScript Arithmetic</h1>
+    <table cellpadding="10">
+        <tr>
+            <th>Variabel</th>
+            <th>Nilai</th>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td id="satu">5</td>
+        </tr>
+        <tr>
+            <td>b</td>
+            <td id="dua">2</td>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td id="tiga">1</td>
+        </tr>
+        <tr>
+            <td >Hasil</td>
+            <td id="hasil"></td>
+        </tr>
+    </table>
+    
+</div>
+    <script>
+
+         let hasil= document.getElementById('hasil');
+        hasil.addEventListener('mouseover', tampil);
+        hasil.addEventListener('mouseout', hilang);
+
+        let tombol = document.getElementById('tombol');
+        tombol.addEventListener('click', ubahNilai);
+
+        function hitung (a, b, c) {
+            return a + b - c;
+        }
+
+        function tampil() {
+            let a = parseInt(document.getElementById('satu').innerHTML);
+            let b = parseInt(document.getElementById('dua').innerHTML);
+            let c = parseInt(document.getElementById('tiga').innerHTML);
+            document.getElementById('hasil').innerHTML = hitung(a, b, c);
+        }
+        
+        function hilang() {
+            document.getElementById('hasil').innerHTML = " ";
+        }
+            
+    </script>
+</body>
+</html>
